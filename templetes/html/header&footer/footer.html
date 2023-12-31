@@ -1,0 +1,123 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-..."
+/>
+
+<style>
+  .contact-form {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form input, textarea {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.contact-form input[type="submit"] {
+    width: 30%;
+    background-color: pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+  .container {
+    display: flex;
+  }
+  .contact-form,
+  .google-map {
+    width: 50%;
+    padding: 20px;
+  }
+  .footer {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .logo {
+    font-family: "Brush Script MT", cursive;
+    font-size: 24px;
+    color: #ff69b4;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons i {
+    margin: 5px;
+    color: #808080;
+  }
+</style>
+
+<div class="container">
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <form action="/submit_form" method="post">
+      <label for="name">Name:</label><br />
+      <input required type="text" id="name" name="name" /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input required type="text" id="email" name="email" /><br /><br />
+
+      <label for="phone">Phone:</label><br />
+      <input required type="text" id="phone" name="phone" /><br /><br />
+
+      <label for="subject">Subject:</label><br />
+      <input required type="text" id="subject" name="subject" /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <!-- I need to add a textarea here -->
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="40"
+        required
+      ></textarea
+      ><br /><br />
+
+      <!-- I need to add a submit button here -->
+      <input
+        type="submit"
+        value="SEND MESSAGE"
+        style="background-color: pink"
+      />
+    </form>
+  </div>
+
+  <!-- Google Map Embed -->
+  
+  <!-- I need to embed a Google map here -->
+  <div class="google-map">
+    <iframe
+      src="https://maps.app.goo.gl/FkvvhDkCjjwv3gib6"
+      
+      width="900"
+      height="500"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+  <div class="logo">Lorem ipsum</div>
+  <div class="social-icons">
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-linkedin-in"></i>
+  </div>
+  <div class="copy-right">© Lorem ipsum dolor sit amet</div>
+</div>
