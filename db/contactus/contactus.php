@@ -40,7 +40,7 @@ if (empty($_POST['email'])) {
     // echo "subject: " . $subject . "<br>";
     // echo "message: " . $message . "<br>";
     // echo "form working<br>";
-    // echo entercontactus($email, $name, $phone, $subject, $message) . "<br>";
+    echo entercontactus($email, $name, $phone, $subject, $message) . "<br>";
     echo sendcontactus($email, $name, $phone, $subject, $message)."<br>";
 }
 echo "end of php";
